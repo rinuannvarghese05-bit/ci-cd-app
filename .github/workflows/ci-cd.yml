@@ -18,5 +18,8 @@ jobs:
       with:
         python-version: '3.9'
 
-    - name: Test Python setup
-      run: python --version
+    - name: Install dependencies
+      run: pip install flask
+
+    - name: Run app
+      run: python app.py
